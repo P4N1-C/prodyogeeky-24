@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<!-- ALL LINKS  -->
+	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+	<link rel="stylesheet" href="style.css">
+
+	<title>Prodyogeeky</title>
+</head>
+<body>
+
+	<!-- HEADER  -->
+
+	<header class="header">
+		<div class="logo-container">
+			<img src="images/logo.png">
+		</div>
+
+		<nav class="navbar-items">
+			<a href="#">HOME</a>	
+			<a href="events/events.html">EVENTS</a>
+			<a href="register/register.html">REGISTER</a>
+		</nav>
+
+		<button class="bx bx-menu menu-icon" onclick="toggleMenu()"></button>
+	</header>
+
+	<div class="menu">
+    <div class="menu-content">
+      <div class="menu-head">PRODYOGEEKY</div>
+      <div class="menu-list">
+
+        <div class="menu-home active">
+          <a href="#" onclick="toggleMenu()">HOME</a>
+        </div>
+
+        <div class="menu-home">
+						<a href="#about" onclick="toggleMenu()">ABOUT</a>
+        </div>
+
+        <div class="menu-home">
+					<a href="#events" onclick="toggleMenu()">EVENTS</a>
+        </div>
+
+        <div class="menu-home">
+					<a href="/ULTIMATE DOMINATION/register/register.html" onclick="toggleMenu()">REGISTER</a>
+        </div>
+
+        <div class="menu-home">
+					<a href="#" onclick="toggleMenu()">SPONSOR</a>
+        </div>
+
+        <div class="menu-home">
+					<a href="#contact" onclick="toggleMenu()">CONTACT</a>
+        </div>
+      </div>
+
+			<div class="menu-socials">
+				<button class="btn">
+					<i class='bx bxl-facebook' ></i>
+				</button>
+
+				<button class="btn">
+					<i class='bx bxl-instagram' ></i>
+				</button>
+
+				<button class="btn">
+					<i class='bx bxl-linkedin' ></i>
+				</button>
+			</div>
+
+    </div>
+    <div class="menu-sidebar">
+      <button class="close-button" onclick="toggleMenu()">X</button>
+    </div>
+  </div>
+
+	<!-- MAIN CONTENT -->
+
+	<main>
+	<!-- -----------landing page------------ -->
+		<section class="landing-page" id="home">
+
+			<div class="left-img-container">
+				<img src="images/landing-page-left.png">
+			</div>
+
+			<div class="right-img-container">
+				<img src="images/landing-page-right.png">
+			</div>
+
+			<div class="title">
+				<h1>
+					PRODYOGEEKY
+				</h1>
+			</div>
+
+			<div class="bx bxs-chevron-down jumping-arrow"></div>
+
+		</section>
+
+		<!-- ------------about us------------ -->
+
+		<section class="about" id="about">
+
+			<div class="about-left-section">
+				<img src="images/about-img.jpg">
+			</div>
+
+			<div class="about-right-section">
+				<h3>
+					ABOUT US
+				</h3>
+
+				<p>
+					Welcome to ProdyoGeeky, where innovation meets enthusiasm! We are the dynamic force behind NIT's premier technical extravaganza. ProdyoGeeky is not just an event; it's a celebration of technology, creativity, and passion. As the flagship techfest organized by our esteemed technical club, we strive to create an unparalleled platform for tech enthusiasts to showcase their brilliance. From riveting competitions and insightful workshops to inspiring talks by industry leaders, ProdyoGeeky is the ultimate hub for all things tech. Join us on this thrilling journey of exploration and discovery, where the future of innovation unfolds. Embrace the geek in you at ProdyoGeeky!
+				</p>
+			</div>
+
+		</section>
+
+		<!-- -------------------events--------------- -->
+
+		<section class="events" id="events">
+			<div class="event-left-section">
+				<h3>
+					EVENTS
+				</h3>
+
+				<p>
+					Get ready to dive into the tech universe at PRODYOGEEKY, our college's annual tech fest! Brace yourself for a thrilling fusion of innovation and excitement, featuring events like Cadathon, where designs come to life; FPV Drone Race, a high-flying spectacle; and a mind-bending Treasure Hunt that'll keep you on your toes. PRODYOGEEKY is not just an event; it's a celebration of technology, creativity, and camaraderie. Whether you're a coding maestro, a drone enthusiast, or someone eager to unravel mysteries, there's something for everyone. Join us for a day of cutting-edge competitions, engaging workshops, and an unforgettable tech experience. Embrace the geek in you - PRODYOGEEKY is where innovation takes center stage!
+				</p>
+				
+				<button class="btn" onclick="window.location.href='events/events.html'">
+					EXPLORE
+				</button>
+
+			</div>
+
+			<div class="event-right-section">
+				<img src="images/event-img.jpg">
+			</div>
+		</section>
+
+		<!-- ----------------------contact us----------------- -->
+
+		<section class="contact" id="contact">
+
+			<div class="bg-image-container"></div>	
+
+			<div class="contact-left-section">
+				<h3>CONTACT US</h3>
+				<p>
+					We're here to fuel your curiosity and enhance your tech journey at PRODYOGEEKY! Whether you have inquiries about event details, registration, or if you're a company looking to collaborate, feel free to reach out. Your enthusiasm and participation are what make PRODYOGEEKY a success year after year.
+				</p>
+			</div>
+
+			<div class="contact-right-section">
+				
+				<form action="#">
+					<div class="input-field">
+							<input type="text" placeholder="Full Name" required>
+					</div>
+					<div class="input-field">
+							<input type="text" placeholder="Email Address" required>
+					</div>
+					<div class="input-field">
+						<input type="text" placeholder="Email Subject" required>
+					</div>
+
+					<div class="textarea-field">
+						<textarea name="" id="" cols="30" rows="10" placeholder="Your Message" required></textarea>
+
+					<div class="submit-button">
+							<button type="submit" class="btn">Submit</button>
+					</div>
+			</form>
+
+			</div>
+		</section>
+	
+	</main>
+
+		<!-- -------------------footer-------------- -->
+
+		<footer class="footer" id="footer">
+			<div class="footer-left-section">
+				<div class="left-section-content">
+					<img src="images/logo.png">
+
+					<div class="title-tagline">
+						<h3>PRODYOGEEKY</h3>
+						<p>Unleash the Excitement!</p>
+					</div>
+				</div>
+
+				<div class="left-section-img">
+				</div>
+			</div>
+
+			<div class="footer-middle-section">
+				<div class="middle-section-img">
+				</div>
+				<div class="middle-section-content">
+					<h3>Become a Sponsor</h3>
+
+					<button class="btn">
+						HERE
+					</button>
+				</div>
+			</div>
+
+			<div class="footer-right-section">
+				<h4>FOR QUERIES</h4>
+				<h3>techclub@nituk.ac.in</h3>
+				<div class="social-media-icons">
+					<button class="btn">
+						<i class='bx bxl-facebook' ></i>
+					</button>
+
+					<button class="btn">
+						<i class='bx bxl-instagram' ></i>
+					</button>
+
+					<button class="btn">
+						<i class='bx bxl-linkedin' ></i>
+					</button>
+
+					<a href="#	" class="reset">
+						<i class='bx bx-right-arrow-alt'></i>
+					</a>
+
+				</div>
+
+			</div>
+		</footer>
+
+
+</body>
+
+<!--=============== MAIN JS ===============-->
+<script src="script.js"></script>
+
+</html>
