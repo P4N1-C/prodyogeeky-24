@@ -485,9 +485,14 @@ section {
     display: none;
   }
 
-  .register .container .login-form {
+  .register .container .login-form,
+  .register .container .register-form {
     width: 80%;
     border: none;
+  }
+
+  .register .container .register-form .wrapper .input-box input{
+    padding: 16px;
   }
 }
 
@@ -510,6 +515,10 @@ section {
   .header .navbar-items {
     display: none;
   }
+
+  .header .menu-icon {
+    font-size: 4rem;
+  }
 }
 
 @media (max-width: 550px) {
@@ -528,7 +537,8 @@ section {
     opacity: 0;;
   }
 
-  .register .container .login-form {
+  .register .container .login-form,
+  .register .container .register-form {
     width: 100%;
   }
 }
