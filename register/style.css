@@ -114,7 +114,6 @@ section {
   width: 55%;
   top: 0;
   bottom: 0;
-  right: 0;
   right: -100%;
   transition: right ease 0.3s;
   display: flex;
