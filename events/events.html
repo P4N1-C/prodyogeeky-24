@@ -34,16 +34,20 @@
       <div class="menu-head">PRODYOGEEKY</div>
       <div class="menu-list">
 
-        <div class="menu-home active">
+        <div class="menu-home">
           <a href="../index.html" onclick="toggleMenu()">HOME</a>
         </div>
 
         <div class="menu-home">
-						<a href="../index.html" onclick="toggleMenu()">ABOUT</a>
+						<a href="../index.html#about" onclick="toggleMenu()">ABOUT</a>
         </div>
 
-        <div class="menu-home">
+        <div class="menu-home active">
 					<a href="#events" onclick="toggleMenu()">EVENTS</a>
+        </div>
+
+				<div class="menu-home">
+					<a href="../index.html#contact" onclick="toggleMenu()">CONTACT</a>
         </div>
 
         <div class="menu-home">
@@ -52,10 +56,6 @@
 
         <div class="menu-home">
 					<a href="#" onclick="toggleMenu()">SPONSOR</a>
-        </div>
-
-        <div class="menu-home">
-					<a href="../index.html" onclick="toggleMenu()">CONTACT</a>
         </div>
       </div>
 
@@ -159,41 +159,6 @@ The competition will take place in 2 turns to every team per maze.
 
 				<div class="item-container">
 						<div class="img-container">
-								<img src="./images/hackathon.jpg" alt="Event image">
-						</div>
-
-						<div class="body-container">
-								<div class="overlay"></div>
-
-								<div class="event-info">
-										<p class="title">HACKATHON</p>
-										<div class="separator"></div>
-										<p class="info">NIT UK, Srinagar</p>
-										<p class="price">Free</p>
-
-										<div class="additional-info">
-												<p class="info">
-														<i class="fas fa-map-marker-alt"></i>
-														NIT, Uttarakhand
-												</p>
-												<p class="info">
-														<i class="far fa-calendar-alt"></i>
-														Sat, Jan 26, 10:00 AM IST
-												</p>
-
-												<p class="info description">
-													Team of 4 members with their expertise in Web Development, UI-UX, App Development & Data
-Science will compete to make a product for a given problem by competing nonstop in the given span
-of 48 hours.
-												</p>
-										</div>
-								</div>
-								<button class="action">register</button>
-						</div>
-				</div>
-
-				<div class="item-container">
-						<div class="img-container">
 								<img src="./images/teslaculation.jpg" alt="Event image">
 						</div>
 
@@ -226,6 +191,41 @@ calculation device
 								<button class="action">register</button>
 						</div>
 				</div>
+
+				<div class="item-container">
+					<div class="img-container">
+							<img src="./images/hackathon.jpg" alt="Event image">
+					</div>
+
+					<div class="body-container">
+							<div class="overlay"></div>
+
+							<div class="event-info">
+									<p class="title">HACKATHON</p>
+									<div class="separator"></div>
+									<p class="info">NIT UK, Srinagar</p>
+									<p class="price">Free</p>
+
+									<div class="additional-info">
+											<p class="info">
+													<i class="fas fa-map-marker-alt"></i>
+													NIT, Uttarakhand
+											</p>
+											<p class="info">
+													<i class="far fa-calendar-alt"></i>
+													Sat, Jan 26, 10:00 AM IST
+											</p>
+
+											<p class="info description">
+												Team of 4 members with their expertise in Web Development, UI-UX, App Development & Data
+Science will compete to make a product for a given problem by competing nonstop in the given span
+of 48 hours.
+											</p>
+									</div>
+							</div>
+							<button class="action">register</button>
+					</div>
+			</div>
 
 				<div class="item-container">
 					<div class="img-container">
@@ -514,6 +514,28 @@ cover a wide range of topics within the technical domain.
 
 </body>
 
+<!--=============== GSAP JS ===============-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js" integrity="sha512-EZI2cBcGPnmR89wTgVnN3602Yyi7muWo8y1B3a8WmIv1J9tYG+udH4LvmYjLiGp37yHB7FfaPBo8ly178m9g4Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<!--=============== SCROLL TRIGGER JS ===============-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollTrigger.min.js" integrity="sha512-OzC82YiH3UmMMs6Ydd9f2i7mS+UFL5f977iIoJ6oy07AJT+ePds9QOEtqXztSH29Nzua59fYS36knmMcv79GOg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+<!--=============== Baffle JS ===============-->
+<script src="https://cdn.jsdelivr.net/npm/baffle@0.3.6/dist/baffle.min.js"></script>
+
+
+<!--=============== SCMOOTH SCROLL JS ===============-->
+<script src="https://cdn.jsdelivr.net/npm/smooth-scrollbar@8.7.1/dist/smooth-scrollbar.js"></script>
+
 <!--=============== MAIN JS ===============-->
-<script src="script.js"></script>
+<script src="script.js">
+	document.addEventListener('DOMContentLoaded', function () {
+    // Initialize Smooth Scrollbar on the body element
+    const bodyScrollbar = Scrollbar.init(document.body);
+
+    // Enable smooth scrolling
+    bodyScrollbar.setPosition(0, 0, 0);
+  });
+</script>
 </html>
