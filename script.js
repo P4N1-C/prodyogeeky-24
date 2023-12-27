@@ -55,7 +55,6 @@ document.addEventListener('DOMContentLoaded', function () {
   // Scroll-triggered animations for the home section
 gsap.to('.left-img-container img', { x: '-100%', opacity: '0', scrollTrigger: { trigger: '.landing-page', start: 'bottom bottom', end: 'bottom top', scrub: 0.5} });
 gsap.to('.right-img-container img', { x: '100%', opacity: '0', scrollTrigger: { trigger: '.landing-page', start: 'bottom bottom', end: 'bottom top', scrub: 0.5} });
-gsap.to('.title', { y: '-100px', opacity: '0', scrollTrigger: { trigger: '.landing-page', start: 'bottom bottom', end: 'bottom top', scrub: 1}, force3D: true });
 
   // Scroll-triggered animations for the about section
 gsap.from('.about-left-section', { x: '-100%', scrollTrigger: { trigger: '.about', start: 'top center', end: 'center center', scrub: 1 } });
