@@ -34,12 +34,12 @@
       <div class="menu-head">PRODYOGEEKY</div>
       <div class="menu-list">
 
-        <div class="menu-home active">
+        <div class="menu-home">
           <a href="../index.html" onclick="toggleMenu()">HOME</a>
         </div>
 
         <div class="menu-home">
-						<a href="#about" onclick="toggleMenu()">ABOUT</a>
+						<a href="../index.html#about" onclick="toggleMenu()">ABOUT</a>
         </div>
 
         <div class="menu-home">
@@ -47,15 +47,15 @@
         </div>
 
         <div class="menu-home">
+					<a href="../index.html#contact" onclick="toggleMenu()">CONTACT</a>
+        </div>
+
+        <div class="menu-home active">
 					<a href="../register/register.html" onclick="toggleMenu()">REGISTER</a>
         </div>
 
         <div class="menu-home">
 					<a href="#" onclick="toggleMenu()">SPONSOR</a>
-        </div>
-
-        <div class="menu-home">
-					<a href="#contact" onclick="toggleMenu()">CONTACT</a>
         </div>
       </div>
 
@@ -147,6 +147,29 @@
 
 </body>
 
+<!--=============== GSAP JS ===============-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js" integrity="sha512-EZI2cBcGPnmR89wTgVnN3602Yyi7muWo8y1B3a8WmIv1J9tYG+udH4LvmYjLiGp37yHB7FfaPBo8ly178m9g4Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<!--=============== SCROLL TRIGGER JS ===============-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollTrigger.min.js" integrity="sha512-OzC82YiH3UmMMs6Ydd9f2i7mS+UFL5f977iIoJ6oy07AJT+ePds9QOEtqXztSH29Nzua59fYS36knmMcv79GOg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+<!--=============== Baffle JS ===============-->
+<script src="https://cdn.jsdelivr.net/npm/baffle@0.3.6/dist/baffle.min.js"></script>
+
+
+<!--=============== SCMOOTH SCROLL JS ===============-->
+<script src="https://cdn.jsdelivr.net/npm/smooth-scrollbar@8.7.1/dist/smooth-scrollbar.js"></script>
+
 <!--=============== MAIN JS ===============-->
-<script src="script.js"></script>
+<script src="script.js">
+	document.addEventListener('DOMContentLoaded', function () {
+    // Initialize Smooth Scrollbar on the body element
+    const bodyScrollbar = Scrollbar.init(document.body);
+
+    // Enable smooth scrolling
+    bodyScrollbar.setPosition(0, 0, 0);
+  });
+</script>
+
 </html>
