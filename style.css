@@ -40,6 +40,15 @@ body::-webkit-scrollbar {
   display: none;
 }
 
+/* body::-webkit-scrollbar {
+  width: 5px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: white;
+  border-radius: 5px;
+} */
+
 body {
   background: var(--bg-color);
   color: white;
@@ -203,6 +212,7 @@ section {
 .active {
   background: rgba(255, 255, 255, 0.3);
   border-radius: 2rem;
+  padding: 1rem;
 }
 
 
@@ -289,6 +299,7 @@ section {
   0 0 80px #9d00c6,
   0 0 120px #9d00c6;
   margin-left: 9rem;
+  white-space: nowrap;
 }
 
 .landing-page .jumping-arrow {
@@ -425,9 +436,8 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: url(images/contact-img.jpg);
-  background-size: cover;
   filter: brightness(40%);
+  overflow: hidden;
 } 
 
 .contact .contact-left-section {
@@ -655,6 +665,7 @@ section {
 
 @media (max-width: 1100px) {
   html {
+    overflow-x: hidden;
     font-size: 40%;
   }
   .left-img-container {
@@ -712,6 +723,10 @@ section {
 
   .contact .contact-left-section h3 {
     align-items: center;
+    font-size: 4rem;
+  }
+  
+  .header .menu-icon {
     font-size: 4rem;
   }
 
@@ -812,7 +827,6 @@ section {
   .footer .footer-left-section img {
     width: 80px;
   }
-  
 }
 
 @media (max-width: 400px) {
